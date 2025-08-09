@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>INDEX CODE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: green;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter Your Name</h2>
+
+  <form onsubmit="redirectToPage(event)">
+    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function redirectToPage(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Redirect to the specified page regardless of input
+      window.location.href = "https://krampah.com/training/training1.html";
+    }
+  </script>
+
+</body>
+</html>
